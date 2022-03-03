@@ -8,12 +8,11 @@ export async function getPokedex() {
     return jsonResponse.results;
 }
 
-// export async function getStarWars() {
-//     let url = 'https://swapi.dev/api/species/3/';
-//     // console.log(url + '/fightingType');
-//     const response = await fetch(url);
+export async function getStarWarsSpecies() {
+    let url = 'https://swapi.dev/api/species/';
+    const response = await fetch(url);
 
-//     const json = await response.json();
+    const jsonResponse = await response.json();
     
-//     return jsonResponse.results;
-// }
+    return jsonResponse.results;
+}
