@@ -126,7 +126,7 @@ select {
 
 .pokemon1 > h2 {
     border: 10px inset black;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 20px;
     margin: 0;
     width: 485px;
@@ -149,14 +149,15 @@ select {
 
 .star-wars1 > h2 {
     border-bottom: solid yellow 2px;
+    width: 600px;
 }
 
 .star-wars1 > h6 {
     font-size: 30px;
     text-indent: 20px;
     margin: 0;
-    border-bottom: solid green 2px;
-    width: 500px;
+    border-bottom: solid green 4px;
+    width: 350px;
 }
 
 
