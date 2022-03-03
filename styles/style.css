@@ -32,7 +32,7 @@ body {
     --footer-height: 30px;
 
     font-family: 'Hubballi', cursive;;
-    background-color: var(--color2);
+    background-color: var(--color2);    
 }
 
 main {
@@ -100,13 +100,19 @@ footer {
 }
 
 .pokemon1 {
-
+    background: linear-gradient(to right , red, white, rgba(0, 0, 0, 0.678));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .pokemon1 > img {
     border: 5px black solid;
     margin-bottom: 30px;
-    background-color: bisque;
+    background-image: url(/assets/8bitgrass.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pokemon1 > h2 {
