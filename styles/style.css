@@ -8,7 +8,7 @@ body {
 
     --color1: white;
     --color2: white;
-    --color3: white;
+    --color3: #14213d;
     --color4: white;
     --color5: white;
 
@@ -59,10 +59,12 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    border-radius: 10px;
+    Color: yellow;
 }
 
 h2 {
@@ -92,25 +94,48 @@ footer {
     box-shadow: var(--shadow);
 }
 
-.pokemon > img {
+.column {
+    width: 100%;
+    margin: auto;
+}
+
+.pokemon1 {
+
+}
+
+.pokemon1 > img {
     border: 5px black solid;
     margin-bottom: 30px;
     background-color: bisque;
 }
 
-.pokemon > h2 {
+.pokemon1 > h2 {
     border: 10px inset black;
     border-radius: 10px;
     padding: 20px;
     margin: 0;
 }
 
-.pokemon > h6 {
+.pokemon1 > h6 {
     font-size: 30px;
     border: 10px black ridge;
     padding: 10px;
     margin: 0;
 }
+
+.star-wars1 {
+    border: solid 1px black;
+    background-image: url(/assets/AT-AT.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.star-wars1 > h6 {
+    font-size: 30px;
+    text-indent: 20px;
+    margin: 0;
+}
+
 
 
 

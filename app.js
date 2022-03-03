@@ -9,7 +9,7 @@ const errorEl = document.querySelector('#error-message');
 async function loadPokedex() {
     const pokedex = await getPokedex();
 
-    list.classList.add('pokemon');
+    list.classList.add('pokemon1');
 
     for (let pokemon of pokedex) {
         const clone = template.content.cloneNode(true);
@@ -31,9 +31,9 @@ async function loadPokedex() {
 
 async function loadStarWars() {
     const starWars = await getStarWarsSpecies();
+    list.classList.add('star-wars1');
 
     for (let species of starWars) {
-        list.classList.add('star-wars');
         const clone = template.content.cloneNode(true);
 
         const name = clone.querySelector('h2');
@@ -49,24 +49,20 @@ async function loadStarWars() {
 // set event listeners 
 selectorEl.addEventListener('change', async(event) => {
     const selected = event.target.value;
+    list.classList.remove('pokemon1', 'star-wars1', 'none');
 
     if (selected === 'none') {
         const p = document.createElement('p');
         p.textContent = 'please select an API';
-        errorEl.appendChild(p);
-        template.classList.remove('pokemon', 'star-wars');
-        
+        errorEl.appendChild(p);    
+        list.classList.remove('pokemon', 'star-wars');   
     } else if (selected === 'pokemon') {
         list.innerHTML = '';
-        errorEl.innerHTML = '';
-        template.classList.remove('star-wars', 'none');
-
+        // errorEl.innerHTML = '';
         await loadPokedex();
     } else if (selected === 'star-wars') {
         list.innerHTML = '';
-        template.classList.remove('none', 'pokemon');
         await loadStarWars();
-        
     }
 });
     // get user input
