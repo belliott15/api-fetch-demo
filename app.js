@@ -52,16 +52,18 @@ selectorEl.addEventListener('change', async(event) => {
     list.classList.remove('pokemon1', 'star-wars1', 'none');
 
     if (selected === 'none') {
+        list.innerHTML = '';
         const p = document.createElement('p');
-        p.textContent = 'please select an API';
+        p.textContent = 'please select Pokemon or Star Wars';
         errorEl.appendChild(p);    
         list.classList.remove('pokemon', 'star-wars');   
     } else if (selected === 'pokemon') {
         list.innerHTML = '';
-        // errorEl.innerHTML = '';
+        errorEl.innerHTML = '';
         await loadPokedex();
     } else if (selected === 'star-wars') {
         list.innerHTML = '';
+        errorEl.innerHTML = '';
         await loadStarWars();
     }
 });

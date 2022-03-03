@@ -94,6 +94,15 @@ footer {
     box-shadow: var(--shadow);
 }
 
+select {
+    padding: 10px;
+    width: 150px;
+    font-family: 'Hubballi', sans-serif;
+    font-size: 1.2em;
+    background: steelblue;
+    border: 6px ridge yellow;
+}
+
 .column {
     width: 100%;
     margin: auto;
@@ -120,6 +129,7 @@ footer {
     border-radius: 10px;
     padding: 20px;
     margin: 0;
+    width: 485px;
 }
 
 .pokemon1 > h6 {
@@ -127,6 +137,7 @@ footer {
     border: 10px black ridge;
     padding: 10px;
     margin: 0;
+    width: 485px;
 }
 
 .star-wars1 {
@@ -136,10 +147,16 @@ footer {
     color: white;
 }
 
+.star-wars1 > h2 {
+    border-bottom: solid yellow 2px;
+}
+
 .star-wars1 > h6 {
     font-size: 30px;
     text-indent: 20px;
     margin: 0;
+    border-bottom: solid green 2px;
+    width: 500px;
 }
 
 
