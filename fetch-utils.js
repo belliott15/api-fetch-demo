@@ -3,17 +3,17 @@ export async function getPokedex() {
     // console.log(url + '/fightingType');
     const response = await fetch(url);
 
-    const json = await response.json();
+    const jsonResponse = await response.json();
     
-    return json.results;
+    return jsonResponse.results;
 }
 
-export async function getStarWars() {
-    let url = 'https://swapi.dev/';
-    // console.log(url + '/fightingType');
-    const response = await fetch(url);
+// export async function getStarWars() {
+//     let url = 'https://swapi.dev/api/species/3/';
+//     // console.log(url + '/fightingType');
+//     const response = await fetch(url);
 
-    const json = await response.json();
+//     const json = await response.json();
     
-    return json.results;
-}
+//     return jsonResponse.results;
+// }
