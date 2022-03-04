@@ -1,11 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+* {
+    box-sizing: border-box;
+}
 body {
     /* feel free to update these css variables for a quick theme */
 
     --color1: white;
     --color2: white;
-    --color3: white;
+    --color3: #14213d;
     --color4: white;
     --color5: white;
 
@@ -29,7 +32,7 @@ body {
     --footer-height: 30px;
 
     font-family: 'Hubballi', cursive;;
-    background-color: var(--color2);
+    background-color: var(--color2);    
 }
 
 main {
@@ -56,10 +59,12 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    border-radius: 10px;
+    Color: yellow;
 }
 
 h2 {
@@ -88,3 +93,73 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+select {
+    padding: 10px;
+    width: 150px;
+    font-family: 'Hubballi', sans-serif;
+    font-size: 1.2em;
+    background: steelblue;
+    border: 6px ridge yellow;
+}
+
+.column {
+    width: 100%;
+    margin: auto;
+}
+
+.pokemon1 {
+    background: linear-gradient(to right , red, white, rgba(0, 0, 0, 0.678));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon1 > img {
+    border: 5px black solid;
+    margin-bottom: 30px;
+    background-image: url(/assets/8bitgrass.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pokemon1 > h2 {
+    border: 10px inset black;
+    /* border-radius: 10px; */
+    padding: 20px;
+    margin: 0;
+    width: 485px;
+}
+
+.pokemon1 > h6 {
+    font-size: 30px;
+    border: 10px black ridge;
+    padding: 10px;
+    margin: 0;
+    width: 485px;
+}
+
+.star-wars1 {
+    border: solid 1px black;
+    background-image: url(/assets/AT-AT.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.star-wars1 > h2 {
+    border-bottom: solid yellow 2px;
+    width: 600px;
+}
+
+.star-wars1 > h6 {
+    font-size: 30px;
+    text-indent: 20px;
+    margin: 0;
+    border-bottom: solid green 4px;
+    width: 350px;
+}
+
+
+
+
