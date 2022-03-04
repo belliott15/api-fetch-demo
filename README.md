@@ -7,7 +7,8 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 ## Making a plan
 
 1. **Make a drawing of your app. Simple "wireframes"**
-![wireframe for about us app](/assets/Wireframe.png “wireframe for about us app”)
+![wireframe for about us app](/assets/Wireframe.png "wireframe for api app")
+
 1. **Once you have a drawing, name the HTML elements you'll need to realize your vision**
     -select with options (pokemon, star wars)
     -ul element for containing each character(each character will be attached to an li element).
